@@ -625,6 +625,10 @@ footer{background:#0e0a08;padding:60px 0 30px;border-top:1px solid rgba(255,255,
               <option value=">1k"     data-i18n="f.qty.5">Más de 1.000 unidades</option>
             </select>
           </div>
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_replyto" id="f-replyto">
+          <input type="hidden" name="_subject" id="f-subject">
           <button type="submit" class="btn btn-gold fsub" data-i18n="f.send">Enviar solicitud</button>
           <p class="fnote" data-i18n="f.note">Sin compromiso · Respuesta en menos de 24 h</p>
         </form>
@@ -869,8 +873,33 @@ document.getElementById('cForm').addEventListener('submit', function(e){
     if(err) ok = false;
   });
   if(!ok) return;
-  this.style.display = 'none';
-  document.getElementById('fOk').classList.add('on');
+
+  const nombre  = document.getElementById('f-nombre').value.trim();
+  const empresa = document.getElementById('f-empresa').value.trim();
+  const email   = document.getElementById('f-email').value.trim();
+  document.getElementById('f-replyto').value = email;
+  document.getElementById('f-subject').value =
+    `Solicitud de presupuesto de ${nombre} (${empresa}) — Como la Seda`;
+
+  const btn = this.querySelector('.fsub');
+  const btnTxt = btn.textContent;
+  btn.textContent = '...';
+  btn.disabled = true;
+
+  fetch('https://formsubmit.co/ajax/alejandrodiazfuentes01@gmail.com', {
+    method: 'POST',
+    headers: { 'Accept': 'application/json' },
+    body: new FormData(this)
+  })
+  .then(r => r.json())
+  .then(() => {
+    this.style.display = 'none';
+    document.getElementById('fOk').classList.add('on');
+  })
+  .catch(() => {
+    btn.textContent = btnTxt;
+    btn.disabled = false;
+  });
 });
 document.querySelectorAll('[required]').forEach(f => f.addEventListener('input', () => f.style.borderColor=''));
 
