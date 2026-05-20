@@ -625,10 +625,10 @@ footer{background:#0e0a08;padding:60px 0 30px;border-top:1px solid rgba(255,255,
               <option value=">1k"     data-i18n="f.qty.5">Más de 1.000 unidades</option>
             </select>
           </div>
-          <input type="hidden" name="_template" value="table">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_replyto" id="f-replyto">
-          <input type="hidden" name="_subject" id="f-subject">
+          <input type="hidden" name="access_key" value="2daea4a6-3360-4954-84e9-eb9ee65320e5">
+          <input type="hidden" name="replyto" id="f-replyto">
+          <input type="hidden" name="subject" id="f-subject">
+          <input type="hidden" name="from_name" value="Como la Seda — Web">
           <button type="submit" class="btn btn-gold fsub" data-i18n="f.send">Enviar solicitud</button>
           <p class="fnote" data-i18n="f.note">Sin compromiso · Respuesta en menos de 24 h</p>
         </form>
@@ -886,7 +886,7 @@ document.getElementById('cForm').addEventListener('submit', function(e){
   btn.textContent = '...';
   btn.disabled = true;
 
-  fetch('https://formsubmit.co/ajax/alejandrodiazfuentes01@gmail.com', {
+  fetch('https://api.web3forms.com/submit', {
     method: 'POST',
     headers: { 'Accept': 'application/json' },
     body: new FormData(this)
