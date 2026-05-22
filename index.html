@@ -160,8 +160,12 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 
 /* ─── Catálogo ─── */
 #cat{background:var(--dark);padding:100px 0}
-.cat-head{text-align:center;margin-bottom:60px}
+.cat-head{text-align:center;margin-bottom:16px}
 .cat-head .title{color:var(--cream)}
+.cat-note{
+  text-align:center;color:rgba(242,232,220,.55);font-size:.9rem;
+  max-width:580px;margin:18px auto 44px;line-height:1.7;
+}
 .cat-grid{display:grid;grid-template-columns:repeat(12,1fr);grid-template-rows:auto auto;gap:14px}
 .cat-item{position:relative;overflow:hidden;cursor:default}
 .cat-item:nth-child(1){grid-column:span 5;grid-row:1}
@@ -182,57 +186,14 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 }
 .cat-item:hover .cat-veil{background:linear-gradient(to top,rgba(168,50,44,.88) 0%,rgba(168,50,44,.15) 65%)}
 .cat-name{font-family:var(--serif);font-size:1.15rem;font-weight:600;color:var(--cream)}
-.cat-cta{text-align:center;margin-top:48px}
-
-/* ─── Proceso ─── */
-#proc{background:var(--cream);padding:100px 0}
-.proc-head{text-align:center;margin-bottom:80px}
-.proc-steps{display:grid;grid-template-columns:repeat(4,1fr);position:relative}
-.proc-line{
-  position:absolute;top:31px;left:12.5%;right:12.5%;height:1px;
-  background:linear-gradient(to right,transparent,var(--gold) 8%,var(--gold) 92%,transparent);
-  opacity:.35;pointer-events:none;
+.cat-cta{text-align:center;margin-top:52px}
+.cat-proc{
+  color:rgba(242,232,220,.35);font-size:.76rem;letter-spacing:.08em;
+  text-transform:uppercase;margin-bottom:24px;
 }
-.proc-step{text-align:center;padding:0 20px}
-.paso{
-  width:62px;height:62px;border-radius:50%;background:#fff;
-  border:2px solid var(--gold);display:flex;align-items:center;justify-content:center;
-  margin:0 auto 22px;font-family:var(--serif);font-size:1.45rem;
-  font-weight:600;color:var(--gold);position:relative;z-index:1;
-  transition:all var(--ease);
-}
-.proc-step:hover .paso{background:var(--gold);color:#fff;transform:scale(1.1);box-shadow:0 6px 20px rgba(194,165,87,.35)}
-.proc-step h3{font-family:var(--serif);font-size:1.05rem;font-weight:600;color:var(--dark);margin-bottom:10px}
-.proc-step p{font-size:.88rem;color:rgba(27,27,27,.62);line-height:1.75}
-
-/* ─── Confianza ─── */
-#conf{background:#fff;padding:100px 0}
-.conf-head{text-align:center;margin-bottom:60px}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(27,27,27,.1);margin-bottom:72px}
-.stat{background:#fff;text-align:center;padding:38px 20px}
-.stat-n{font-family:var(--serif);font-size:2.4rem;font-weight:700;color:var(--red);display:block;line-height:1;margin-bottom:7px}
-.stat-l{font-size:.82rem;color:rgba(27,27,27,.55);letter-spacing:.04em}
-.test-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
-.test{background:var(--cream);padding:38px;position:relative}
-.test::before{
-  content:'\201C';font-family:var(--serif);font-size:5.5rem;
-  color:var(--gold);opacity:.35;position:absolute;top:8px;left:28px;line-height:1;
-}
-.test blockquote{
-  font-size:.92rem;line-height:1.85;color:rgba(27,27,27,.78);
-  margin-bottom:22px;padding-top:36px;font-style:italic;
-}
-.test-auth{display:flex;align-items:center;gap:12px}
-.test-av{
-  width:42px;height:42px;border-radius:50%;background:var(--red);
-  display:flex;align-items:center;justify-content:center;
-  font-family:var(--serif);font-size:.95rem;font-weight:700;color:#fff;flex-shrink:0;
-}
-.test-info strong{display:block;font-size:.82rem;font-weight:600;color:var(--dark)}
-.test-info span{font-size:.78rem;color:rgba(27,27,27,.5)}
 
 /* ─── Contacto ─── */
-#cta{background:var(--dark);padding:100px 0}
+#cta{background:var(--dark);padding:100px 0;border-top:1px solid rgba(255,255,255,.07)}
 .cta-inner{display:grid;grid-template-columns:1fr 1.6fr;gap:72px;align-items:start}
 .cta-info .title{color:var(--cream);margin-bottom:14px}
 .cta-sub{color:rgba(242,232,220,.58);font-size:.97rem;line-height:1.75;margin-bottom:36px}
@@ -274,27 +235,13 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 .fsuccess p{color:rgba(242,232,220,.58);font-size:.92rem}
 
 /* ─── Footer ─── */
-footer{background:#0e0a08;padding:60px 0 30px;border-top:1px solid rgba(255,255,255,.05)}
-.ft-inner{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:48px;margin-bottom:44px}
-.ft-brand .logo-wrap{font-size:1.7rem;color:var(--cream)}
-.ft-tag{font-size:.72rem;color:rgba(242,232,220,.35);letter-spacing:.12em;text-transform:uppercase;margin-top:7px}
-.ft-desc{font-size:.82rem;color:rgba(242,232,220,.4);line-height:1.8;margin-top:14px;max-width:270px}
-.ft-col h4{font-size:.72rem;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
-.ft-col li{margin-bottom:9px}
-.ft-col a{font-size:.82rem;color:rgba(242,232,220,.45);transition:color var(--ease)}
-.ft-col a:hover{color:var(--cream)}
-.ft-bot{display:flex;align-items:center;justify-content:space-between;padding-top:28px;border-top:1px solid rgba(255,255,255,.05)}
+footer{background:#0e0a08;padding:28px 0;border-top:1px solid rgba(255,255,255,.05)}
+.ft-bot{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px}
+.ft-logo{font-size:1.2rem;color:var(--cream)}
 .ft-copy{font-size:.75rem;color:rgba(242,232,220,.28)}
-.ft-copy a{color:rgba(242,232,220,.4);transition:color var(--ease)}
-.ft-copy a:hover{color:var(--cream)}
-.socials{display:flex;gap:10px}
-.soc{
-  width:34px;height:34px;border:1px solid rgba(255,255,255,.1);border-radius:2px;
-  display:flex;align-items:center;justify-content:center;transition:all var(--ease);
-}
-.soc:hover{border-color:var(--gold);background:rgba(194,165,87,.1)}
-.soc svg{width:15px;height:15px;fill:rgba(242,232,220,.5);transition:fill var(--ease)}
-.soc:hover svg{fill:var(--gold)}
+.ft-links{display:flex;gap:20px}
+.ft-links a{font-size:.78rem;color:rgba(242,232,220,.4);transition:color var(--ease)}
+.ft-links a:hover{color:var(--cream)}
 
 /* ─── Fade-up ─── */
 .fu{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
@@ -310,25 +257,19 @@ footer{background:#0e0a08;padding:60px 0 30px;border-top:1px solid rgba(255,255,
   .cat-item:nth-child(2){grid-column:span 6}
   .cat-item:nth-child(3),.cat-item:nth-child(4),.cat-item:nth-child(5){grid-column:span 4}
   .cta-inner{gap:44px}
-  .ft-inner{grid-template-columns:1fr 1fr}
 }
 @media(max-width:768px){
   .hdr-cta{display:none}
   .porq-grid{grid-template-columns:1fr;max-width:460px;margin:0 auto}
   .cat-grid{grid-template-columns:1fr 1fr}
   .cat-item:nth-child(n){grid-column:span 1 !important;grid-row:auto !important}
-  .proc-line{display:none}
-  .proc-steps{grid-template-columns:1fr 1fr;gap:36px}
-  .stats{grid-template-columns:1fr}
-  .test-grid{grid-template-columns:1fr}
   .cta-inner{grid-template-columns:1fr;gap:44px}
   .cform{padding:28px 20px}
   .frow{grid-template-columns:1fr}
-  .ft-inner{grid-template-columns:1fr}
-  .ft-bot{flex-direction:column;gap:16px;text-align:center}
+  .ft-bot{flex-direction:column;gap:12px;text-align:center}
+  .ft-links{flex-direction:column;align-items:center;gap:8px}
 }
 @media(max-width:480px){
-  .proc-steps{grid-template-columns:1fr}
   .cat-grid{grid-template-columns:1fr}
 }
 </style>
@@ -431,6 +372,7 @@ footer{background:#0e0a08;padding:60px 0 30px;border-top:1px solid rgba(255,255,
       <h2 class="title" data-i18n="cat.title">Qué ofrecemos</h2>
       <div class="divider"><div class="divider-dot"></div></div>
     </div>
+    <p class="cat-note" data-i18n="cat.note">¿No ves lo que buscas? Fabricamos prácticamente cualquier producto personalizado — si lo puedes imaginar, lo podemos hacer.</p>
     <div class="cat-grid">
 
       <div class="cat-item fu">
@@ -460,109 +402,8 @@ footer{background:#0e0a08;padding:60px 0 30px;border-top:1px solid rgba(255,255,
 
     </div>
     <div class="cat-cta">
-      <a href="#cta" class="btn btn-outline" data-i18n="cat.cta">Ver catálogo completo</a>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════ PROCESO ═══════════════════════════ -->
-<section id="proc">
-  <div class="wrap">
-    <div class="proc-head">
-      <span class="label" data-i18n="proc.label">El proceso</span>
-      <h2 class="title" data-i18n="proc.title">Cómo funciona</h2>
-      <div class="divider"><div class="divider-dot"></div></div>
-    </div>
-    <div class="proc-steps">
-      <div class="proc-line" aria-hidden="true"></div>
-
-      <div class="proc-step fu">
-        <div class="paso">01</div>
-        <h3 data-i18n="proc.1.h">Nos cuentas qué necesitas</h3>
-        <p data-i18n="proc.1.p">Cuéntanos el producto, cantidad y personalización que tienes en mente.</p>
-      </div>
-
-      <div class="proc-step fu">
-        <div class="paso">02</div>
-        <h3 data-i18n="proc.2.h">Propuesta en 24&nbsp;h</h3>
-        <p data-i18n="proc.2.p">Recibes propuesta detallada con precio real de fábrica y muestras de calidad.</p>
-      </div>
-
-      <div class="proc-step fu">
-        <div class="paso">03</div>
-        <h3 data-i18n="proc.3.h">Confirmamos y producimos</h3>
-        <p data-i18n="proc.3.p">Diseño aprobado, iniciamos producción con control de calidad en origen.</p>
-      </div>
-
-      <div class="proc-step fu">
-        <div class="paso">04</div>
-        <h3 data-i18n="proc.4.h">Entrega en tu puerta</h3>
-        <p data-i18n="proc.4.p">Tu pedido llega directo a tu empresa, listo para usar o distribuir.</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════ CONFIANZA ═══════════════════════════ -->
-<section id="conf">
-  <div class="wrap">
-    <div class="conf-head">
-      <span class="label" data-i18n="conf.label">Clientes</span>
-      <h2 class="title" data-i18n="conf.title">Lo que dicen nuestros clientes</h2>
-      <div class="divider"><div class="divider-dot"></div></div>
-    </div>
-
-    <div class="stats">
-      <div class="stat fu">
-        <span class="stat-n">+200</span>
-        <span class="stat-l" data-i18n="stat.1">empresas atendidas</span>
-      </div>
-      <div class="stat fu">
-        <span class="stat-n">3–5 sem.</span>
-        <span class="stat-l" data-i18n="stat.2">plazo de entrega medio</span>
-      </div>
-      <div class="stat fu">
-        <span class="stat-n">100%</span>
-        <span class="stat-l" data-i18n="stat.3">calidad auditada en origen</span>
-      </div>
-    </div>
-
-    <div class="test-grid">
-
-      <div class="test fu">
-        <blockquote data-i18n="test.1.q">"Pedimos 500 termos personalizados para nuestra convención anual. El precio fue un 40% inferior a todo lo que habíamos cotizado antes y la calidad superó nuestras expectativas."</blockquote>
-        <div class="test-auth">
-          <div class="test-av">L</div>
-          <div class="test-info">
-            <strong data-i18n="test.1.n">Laura M.</strong>
-            <span data-i18n="test.1.r">Directora de Marketing · Grupo Norte</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="test fu">
-        <blockquote data-i18n="test.2.q">"Por fin un proveedor que entiende lo que necesitamos. Muestras rápidas, comunicación impecable y producto terminado con un acabado que no esperábamos a ese precio."</blockquote>
-        <div class="test-auth">
-          <div class="test-av">C</div>
-          <div class="test-info">
-            <strong data-i18n="test.2.n">Carlos R.</strong>
-            <span data-i18n="test.2.r">Responsable de Compras · TechSolutions</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="test fu">
-        <blockquote data-i18n="test.3.q">"800 libretas y bolígrafos personalizados para la campaña navideña. Entrega puntual, trato cercano y un precio que ningún proveedor nacional podía igualar."</blockquote>
-        <div class="test-auth">
-          <div class="test-av">A</div>
-          <div class="test-info">
-            <strong data-i18n="test.3.n">Ana B.</strong>
-            <span data-i18n="test.3.r">RRHH Manager · Constructora Ibérica</span>
-          </div>
-        </div>
-      </div>
-
+      <p class="cat-proc" data-i18n="cat.proc">Cuéntanos qué necesitas · propuesta en 24 h · producción auditada · entrega en tu puerta</p>
+      <a href="#cta" class="btn btn-outline" data-i18n="cat.cta">Pide presupuesto sin compromiso</a>
     </div>
   </div>
 </section>
@@ -651,54 +492,14 @@ footer{background:#0e0a08;padding:60px 0 30px;border-top:1px solid rgba(255,255,
 <!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
 <footer>
   <div class="wrap">
-    <div class="ft-inner">
-
-      <div class="ft-brand">
-        <div class="logo-wrap" style="font-size:1.75rem;color:var(--cream)">
-          como la <span class="seda-inner">seda
-            <svg class="seda-wave" viewBox="0 0 56 8" fill="none" preserveAspectRatio="none">
-              <path d="M0,4 Q7,0 14,4 Q21,8 28,4 Q35,0 42,4 Q49,8 56,4" stroke="#C2A557" stroke-width="1.9" fill="none"/>
-            </svg>
-          </span>
-        </div>
-        <p class="ft-tag" data-i18n="ft.tag">Regalos de empresa · Desde el origen</p>
-        <p class="ft-desc" data-i18n="ft.desc">Importación directa desde fábricas en China. Productos personalizados para empresas, sin intermediarios.</p>
-      </div>
-
-      <div class="ft-col">
-        <h4 data-i18n="ft.c1.h">Servicios</h4>
-        <ul>
-          <li><a href="#cat" data-i18n="cat.1">Textil corporativo</a></li>
-          <li><a href="#cat" data-i18n="cat.2">Drinkware</a></li>
-          <li><a href="#cat" data-i18n="cat.3">Oficina premium</a></li>
-          <li><a href="#cat" data-i18n="cat.4">Tecnología promocional</a></li>
-          <li><a href="#cat" data-i18n="cat.5">Pedidos al por mayor</a></li>
-        </ul>
-      </div>
-
-      <div class="ft-col">
-        <h4 data-i18n="ft.c2.h">Empresa</h4>
-        <ul>
-          <li><a href="#porq" data-i18n="ft.c2.1">Por qué nosotros</a></li>
-          <li><a href="#proc" data-i18n="ft.c2.2">Cómo funciona</a></li>
-          <li><a href="#cta"  data-i18n="ft.c2.3">Contacto</a></li>
-          <li><a href="#"     data-i18n="ft.legal">Aviso legal</a></li>
-          <li><a href="#"     data-i18n="ft.priv">Política de privacidad</a></li>
-        </ul>
-      </div>
-
-    </div>
-
     <div class="ft-bot">
-      <p class="ft-copy">
-        <span data-i18n="ft.rights">© 2026 Como la Seda. Todos los derechos reservados.</span>
-        &nbsp;·&nbsp;<a href="#" data-i18n="ft.legal">Aviso legal</a>
-        &nbsp;·&nbsp;<a href="#" data-i18n="ft.priv">Política de privacidad</a>
-      </p>
-      <div class="socials">
-        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="soc" aria-label="LinkedIn">
-          <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
-        </a>
+      <a href="#" class="ft-logo logo-wrap" aria-label="Como la Seda">
+        como la <span class="seda-inner">seda<svg class="seda-wave" viewBox="0 0 56 8" fill="none" preserveAspectRatio="none"><path d="M0,4 Q7,0 14,4 Q21,8 28,4 Q35,0 42,4 Q49,8 56,4" stroke="#C2A557" stroke-width="1.9" fill="none"/></svg></span>
+      </a>
+      <p class="ft-copy" data-i18n="ft.rights">© 2026 Como la Seda. Todos los derechos reservados.</p>
+      <div class="ft-links">
+        <a href="mailto:comolaseda@wisdowl.com">comolaseda@wisdowl.com</a>
+        <a href="tel:+34622200594">+34 622 200 594</a>
       </div>
     </div>
   </div>
@@ -723,33 +524,14 @@ es:{
   'porq.3.p':'Antes de fabricar, puedes tocar y validar el producto. Enviamos muestras físicas para que compruebes calidad y acabados.',
   'cat.label':'Productos',
   'cat.title':'Qué ofrecemos',
+  'cat.note':'¿No ves lo que buscas? Fabricamos prácticamente cualquier producto personalizado — si lo puedes imaginar, lo podemos hacer.',
   'cat.1':'Textil corporativo',
   'cat.2':'Drinkware',
   'cat.3':'Oficina premium',
   'cat.4':'Tecnología promocional',
   'cat.5':'Pedidos al por mayor',
-  'cat.cta':'Ver catálogo completo',
-  'proc.label':'El proceso',
-  'proc.title':'Cómo funciona',
-  'proc.1.h':'Nos cuentas qué necesitas',
-  'proc.1.p':'Cuéntanos el producto, cantidad y personalización que tienes en mente.',
-  'proc.2.h':'Propuesta en 24 h',
-  'proc.2.p':'Recibes propuesta detallada con precio real de fábrica y muestras de calidad.',
-  'proc.3.h':'Confirmamos y producimos',
-  'proc.3.p':'Diseño aprobado, iniciamos producción con control de calidad en origen.',
-  'proc.4.h':'Entrega en tu puerta',
-  'proc.4.p':'Tu pedido llega directo a tu empresa, listo para usar o distribuir.',
-  'conf.label':'Clientes',
-  'conf.title':'Lo que dicen nuestros clientes',
-  'stat.1':'empresas atendidas',
-  'stat.2':'plazo de entrega medio',
-  'stat.3':'calidad auditada en origen',
-  'test.1.q':'"Pedimos 500 termos personalizados para nuestra convención anual. El precio fue un 40 % inferior a todo lo que habíamos cotizado antes y la calidad superó nuestras expectativas."',
-  'test.1.n':'Laura M.','test.1.r':'Directora de Marketing · Grupo Norte',
-  'test.2.q':'"Por fin un proveedor que entiende lo que necesitamos. Muestras rápidas, comunicación impecable y producto terminado con un acabado que no esperábamos a ese precio."',
-  'test.2.n':'Carlos R.','test.2.r':'Responsable de Compras · TechSolutions',
-  'test.3.q':'"800 libretas y bolígrafos personalizados para la campaña navideña. Entrega puntual, trato cercano y un precio que ningún proveedor nacional podía igualar."',
-  'test.3.n':'Ana B.','test.3.r':'RRHH Manager · Constructora Ibérica',
+  'cat.proc':'Cuéntanos qué necesitas · propuesta en 24 h · producción auditada · entrega en tu puerta',
+  'cat.cta':'Pide presupuesto sin compromiso',
   'cta.label':'Contacto',
   'cta.title':'Cuéntanos qué necesitas',
   'cta.sub':'Te respondemos en menos de 24 horas con una propuesta personalizada y precio real de fábrica.',
@@ -760,14 +542,9 @@ es:{
   'f.qty.1':'Menos de 50 unidades','f.qty.2':'50 – 200 unidades',
   'f.qty.3':'200 – 500 unidades','f.qty.4':'500 – 1.000 unidades',
   'f.qty.5':'Más de 1.000 unidades',
-  'f.send':'Enviar solicitud','f.note':'Sin compromiso · Respuesta en menos de 24 h',
+  'f.send':'Enviar solicitud','f.note':'Sin compromiso · Respuesta en menos de 24 h',
   'f.ok.h':'¡Solicitud recibida!',
   'f.ok.p':'Te contactaremos en menos de 24 horas con una propuesta personalizada.',
-  'ft.tag':'Regalos de empresa · Desde el origen',
-  'ft.desc':'Importación directa desde fábricas en China. Productos personalizados para empresas, sin intermediarios.',
-  'ft.c1.h':'Servicios','ft.c2.h':'Empresa',
-  'ft.c2.1':'Por qué nosotros','ft.c2.2':'Cómo funciona','ft.c2.3':'Contacto',
-  'ft.legal':'Aviso legal','ft.priv':'Política de privacidad',
   'ft.rights':'© 2026 Como la Seda. Todos los derechos reservados.'
 },
 en:{
@@ -786,33 +563,14 @@ en:{
   'porq.3.p':'Before manufacturing, you can touch and validate the product. We send physical samples so you can check quality and finishes.',
   'cat.label':'Products',
   'cat.title':'What we offer',
+  'cat.note':'Don\'t see what you\'re looking for? We can make almost any custom product — if you can imagine it, we can make it.',
   'cat.1':'Corporate apparel',
   'cat.2':'Drinkware',
   'cat.3':'Premium office',
   'cat.4':'Promotional tech',
   'cat.5':'Wholesale orders',
-  'cat.cta':'View full catalogue',
-  'proc.label':'The process',
-  'proc.title':'How it works',
-  'proc.1.h':'Tell us what you need',
-  'proc.1.p':'Share the product, quantity and customization you have in mind.',
-  'proc.2.h':'Proposal in 24 h',
-  'proc.2.p':'Receive a detailed proposal with real factory prices and quality samples.',
-  'proc.3.h':'Confirmed and produced',
-  'proc.3.p':'Design approved, we start production with quality control at origin.',
-  'proc.4.h':'Delivered to your door',
-  'proc.4.p':'Your order arrives directly to your company, ready to use or distribute.',
-  'conf.label':'Clients',
-  'conf.title':'What our clients say',
-  'stat.1':'companies served',
-  'stat.2':'average delivery time',
-  'stat.3':'quality audited at origin',
-  'test.1.q':'"We ordered 500 custom thermal bottles for our annual convention. The price was 40 % lower than anything we had previously quoted and the quality exceeded our expectations."',
-  'test.1.n':'Laura M.','test.1.r':'Marketing Director · Grupo Norte',
-  'test.2.q':'"Finally a supplier that understands what we need. Fast samples, excellent communication and a finish we didn\'t expect at that price point."',
-  'test.2.n':'Carlos R.','test.2.r':'Purchasing Manager · TechSolutions',
-  'test.3.q':'"800 custom notebooks and pens for the Christmas campaign. On-time delivery, personal attention and a price no domestic supplier could match."',
-  'test.3.n':'Ana B.','test.3.r':'HR Manager · Constructora Ibérica',
+  'cat.proc':'Tell us what you need · proposal in 24 h · audited production · delivery to your door',
+  'cat.cta':'Get a quote — no commitment',
   'cta.label':'Contact',
   'cta.title':'Tell us what you need',
   'cta.sub':'We\'ll reply within 24 hours with a personalised proposal and a real factory price.',
@@ -823,14 +581,9 @@ en:{
   'f.qty.1':'Less than 50 units','f.qty.2':'50 – 200 units',
   'f.qty.3':'200 – 500 units','f.qty.4':'500 – 1,000 units',
   'f.qty.5':'More than 1,000 units',
-  'f.send':'Send request','f.note':'No commitment · Reply within 24 h',
+  'f.send':'Send request','f.note':'No commitment · Reply within 24 h',
   'f.ok.h':'Request received!',
   'f.ok.p':'We\'ll contact you within 24 hours with a personalised proposal.',
-  'ft.tag':'Corporate gifts · From the source',
-  'ft.desc':'Direct factory imports from China. Customised products for businesses, no middlemen.',
-  'ft.c1.h':'Services','ft.c2.h':'Company',
-  'ft.c2.1':'Why us','ft.c2.2':'How it works','ft.c2.3':'Contact',
-  'ft.legal':'Legal notice','ft.priv':'Privacy policy',
   'ft.rights':'© 2026 Como la Seda. All rights reserved.'
 }
 };
