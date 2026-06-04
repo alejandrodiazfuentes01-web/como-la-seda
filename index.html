@@ -669,6 +669,7 @@ document.getElementById('cForm').addEventListener('submit', function(e){
   .then(() => {
     this.style.display = 'none';
     document.getElementById('fOk').classList.add('on');
+    if (window.fbq) fbq('track', 'Lead');
   })
   .catch(() => {
     btn.textContent = btnTxt;
