@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Como la Seda — Importación directa de productos personalizados desde fábricas en China. Regalos de empresa con tu logo, sin intermediarios.">
-<title>Como la Seda | Regalos de empresa · Desde el origen</title>
+<meta name="description" content="Como la Seda — Importación directa de productos personalizados desde fábricas en China. Regalos de empresa, suministros recurrentes e importación para revender. Sin intermediarios.">
+<title>Como la Seda | Desde el origen</title>
 
 <!-- Meta Pixel Code -->
 <script>
@@ -29,269 +29,7 @@ src="https://www.facebook.com/tr?id=25024738777223192&ev=PageView&noscript=1"
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-<style>
-/* ─── Variables ─── */
-:root {
-  --red:    #A8322C;
-  --cream:  #F2E8DC;
-  --dark:   #1B1B1B;
-  --gold:   #C2A557;
-  --gold-l: #D4BB7A;
-  --serif:  'Playfair Display', Georgia, serif;
-  --sans:   'Inter', system-ui, sans-serif;
-  --max:    1200px;
-  --hh:     72px;
-  --ease:   0.3s ease;
-}
-
-/* ─── Reset ─── */
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:var(--sans);color:var(--dark);background:var(--cream);line-height:1.6;overflow-x:hidden}
-img{display:block;max-width:100%}
-a{color:inherit;text-decoration:none}
-ul{list-style:none}
-button{cursor:pointer;border:none;background:none;font-family:inherit}
-
-/* ─── Utils ─── */
-.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
-
-.label{
-  font-size:.72rem;font-weight:600;letter-spacing:.16em;
-  text-transform:uppercase;color:var(--gold);margin-bottom:10px;
-  display:block;
-}
-.title{
-  font-family:var(--serif);font-size:clamp(2rem,4vw,3rem);
-  font-weight:600;line-height:1.2;color:var(--dark);
-}
-.divider{
-  display:flex;align-items:center;gap:12px;
-  max-width:180px;margin:20px auto 0;
-}
-.divider::before,.divider::after{
-  content:'';flex:1;height:1px;background:var(--gold);opacity:.35;
-}
-.divider-dot{width:5px;height:5px;border-radius:50%;background:var(--gold);flex-shrink:0}
-
-.btn{
-  display:inline-flex;align-items:center;gap:8px;
-  padding:14px 32px;font-family:var(--sans);font-size:.85rem;
-  font-weight:600;letter-spacing:.06em;text-transform:uppercase;
-  transition:all var(--ease);cursor:pointer;border:none;
-}
-.btn-gold{background:var(--gold);color:var(--dark)}
-.btn-gold:hover{background:var(--gold-l);transform:translateY(-2px);box-shadow:0 8px 24px rgba(194,165,87,.3)}
-.btn-outline{border:2px solid var(--cream);color:var(--cream)}
-.btn-outline:hover{background:var(--cream);color:var(--dark)}
-
-/* ─── Logo ─── */
-.logo-wrap{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:.02em;line-height:1}
-.seda-inner{position:relative;display:inline-block}
-.seda-wave{position:absolute;bottom:-7px;left:0;width:100%;overflow:visible;pointer-events:none}
-
-/* ─── Header ─── */
-#hdr{
-  position:fixed;top:0;left:0;right:0;z-index:100;height:var(--hh);
-  display:flex;align-items:center;
-  transition:background var(--ease),box-shadow var(--ease);
-}
-#hdr.on{
-  background:rgba(20,12,8,.96);backdrop-filter:blur(16px);
-  box-shadow:0 2px 24px rgba(0,0,0,.25);
-}
-#hdr .wrap{display:flex;align-items:center;justify-content:space-between;width:100%}
-.hdr-logo{font-size:1.35rem;color:var(--cream)}
-.hdr-right{display:flex;align-items:center;gap:20px}
-
-.lang{display:flex;align-items:center;gap:3px}
-.lang-btn{
-  padding:4px 9px;font-size:.75rem;font-weight:500;letter-spacing:.09em;
-  color:rgba(242,232,220,.5);transition:color var(--ease);border-radius:2px;
-}
-.lang-btn.on{color:var(--gold);font-weight:700}
-.lang-btn:hover:not(.on){color:var(--cream)}
-.lang-sep{color:rgba(242,232,220,.2);font-size:.7rem}
-
-.hdr-cta{padding:10px 22px;font-size:.78rem}
-
-/* ─── Hero ─── */
-#hero{
-  position:relative;min-height:100vh;display:flex;
-  align-items:center;justify-content:center;text-align:center;
-  overflow:hidden;background:#140c08;
-}
-.hero-bg{
-  position:absolute;inset:0;
-  background:url('https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=1800&q=75&fit=crop') center/cover no-repeat;
-  opacity:.22;transform:scale(1.06);transition:transform 9s ease,opacity .6s ease;
-}
-.hero-bg.rdy{transform:scale(1)}
-.hero-veil{
-  position:absolute;inset:0;
-  background:linear-gradient(to bottom,rgba(20,12,8,.55) 0%,rgba(20,12,8,.3) 45%,rgba(20,12,8,.72) 100%);
-}
-.hero-body{
-  position:relative;z-index:2;max-width:820px;
-  padding:calc(var(--hh) + 60px) 24px 80px;
-}
-.hero-logo{font-size:clamp(2.8rem,7vw,5.2rem);color:var(--cream);margin-bottom:32px}
-.hero-tag{
-  font-size:.78rem;font-weight:500;letter-spacing:.22em;
-  text-transform:uppercase;color:var(--gold);margin-bottom:22px;display:block;
-}
-.hero-h1{
-  font-family:var(--serif);font-size:clamp(2.6rem,6.5vw,5rem);
-  font-weight:700;line-height:1.08;color:var(--cream);margin-bottom:22px;
-}
-.hero-sub{
-  font-size:clamp(.95rem,2vw,1.15rem);font-weight:300;
-  color:rgba(242,232,220,.8);max-width:540px;margin:0 auto 40px;line-height:1.75;
-}
-.hero-arrow{
-  position:absolute;bottom:30px;left:50%;transform:translateX(-50%);
-  z-index:2;color:rgba(242,232,220,.4);animation:bob 2.2s ease-in-out infinite;
-}
-@keyframes bob{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(7px)}}
-
-/* ─── Por qué ─── */
-#porq{background:var(--cream);padding:100px 0}
-.porq-head{text-align:center;margin-bottom:60px}
-.porq-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
-.porq-card{
-  background:#fff;padding:48px 32px;text-align:center;
-  position:relative;transition:transform var(--ease),box-shadow var(--ease);
-  border-bottom:3px solid transparent;
-}
-.porq-card::after{
-  content:'';position:absolute;bottom:-3px;left:0;
-  width:0;height:3px;background:var(--gold);transition:width .5s ease;
-}
-.porq-card:hover::after{width:100%}
-.porq-card:hover{transform:translateY(-5px);box-shadow:0 20px 48px rgba(0,0,0,.08)}
-.porq-icon{
-  width:62px;height:62px;border-radius:50%;background:rgba(168,50,44,.08);
-  display:flex;align-items:center;justify-content:center;margin:0 auto 22px;
-}
-.porq-icon svg{width:26px;height:26px;stroke:var(--red);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
-.porq-card h3{font-family:var(--serif);font-size:1.35rem;font-weight:600;color:var(--dark);margin-bottom:12px}
-.porq-card p{font-size:.92rem;color:rgba(27,27,27,.68);line-height:1.75}
-
-/* ─── Catálogo ─── */
-#cat{background:var(--dark);padding:100px 0}
-.cat-head{text-align:center;margin-bottom:16px}
-.cat-head .title{color:var(--cream)}
-.cat-note{
-  text-align:center;color:rgba(242,232,220,.55);font-size:.9rem;
-  max-width:580px;margin:18px auto 44px;line-height:1.7;
-}
-.cat-grid{display:grid;grid-template-columns:repeat(12,1fr);grid-template-rows:auto auto;gap:14px}
-.cat-item{position:relative;overflow:hidden;cursor:default}
-.cat-item:nth-child(1){grid-column:span 5;grid-row:1}
-.cat-item:nth-child(2){grid-column:span 7;grid-row:1}
-.cat-item:nth-child(3){grid-column:span 4;grid-row:2}
-.cat-item:nth-child(4){grid-column:span 4;grid-row:2}
-.cat-item:nth-child(5){grid-column:span 4;grid-row:2}
-.cat-item img{
-  width:100%;height:100%;object-fit:cover;min-height:240px;
-  transition:transform .65s ease;
-}
-.cat-item:hover img{transform:scale(1.07)}
-.cat-veil{
-  position:absolute;inset:0;
-  background:linear-gradient(to top,rgba(20,12,8,.9) 0%,rgba(20,12,8,.1) 60%);
-  display:flex;align-items:flex-end;padding:22px;
-  transition:background var(--ease);
-}
-.cat-item:hover .cat-veil{background:linear-gradient(to top,rgba(168,50,44,.88) 0%,rgba(168,50,44,.15) 65%)}
-.cat-name{font-family:var(--serif);font-size:1.15rem;font-weight:600;color:var(--cream)}
-.cat-cta{text-align:center;margin-top:52px}
-.cat-proc{
-  color:rgba(242,232,220,.35);font-size:.76rem;letter-spacing:.08em;
-  text-transform:uppercase;margin-bottom:24px;
-}
-
-/* ─── Contacto ─── */
-#cta{background:var(--dark);padding:100px 0;border-top:1px solid rgba(255,255,255,.07)}
-.cta-inner{display:grid;grid-template-columns:1fr 1.6fr;gap:72px;align-items:start}
-.cta-info .title{color:var(--cream);margin-bottom:14px}
-.cta-sub{color:rgba(242,232,220,.58);font-size:.97rem;line-height:1.75;margin-bottom:36px}
-.cta-detail{display:flex;align-items:flex-start;gap:12px;color:rgba(242,232,220,.72);font-size:.88rem;margin-bottom:12px}
-.cta-detail svg{width:17px;height:17px;stroke:var(--gold);fill:none;stroke-width:1.6;flex-shrink:0;margin-top:2px}
-.cform{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);padding:44px}
-.frow{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-.fg{margin-bottom:18px}
-.fg label{
-  display:block;font-size:.72rem;font-weight:500;letter-spacing:.09em;
-  text-transform:uppercase;color:rgba(242,232,220,.5);margin-bottom:8px;
-}
-.fg input,.fg textarea,.fg select{
-  width:100%;padding:13px 16px;background:rgba(255,255,255,.06);
-  border:1px solid rgba(255,255,255,.12);color:var(--cream);
-  font-family:var(--sans);font-size:.92rem;transition:border-color var(--ease);
-  outline:none;-webkit-appearance:none;appearance:none;border-radius:0;
-}
-.fg input::placeholder,.fg textarea::placeholder{color:rgba(242,232,220,.25)}
-.fg input:focus,.fg textarea:focus,.fg select:focus{border-color:var(--gold)}
-.fg textarea{min-height:110px;resize:vertical}
-.fg select{
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='7' viewBox='0 0 11 7'%3E%3Cpath d='M1 1l4.5 4.5L10 1' stroke='%23C2A557' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
-  background-repeat:no-repeat;background-position:right 14px center;padding-right:38px;
-  cursor:pointer;
-}
-.fg select option{background:var(--dark);color:var(--cream)}
-.fsub{width:100%;padding:17px;font-size:.88rem}
-.fnote{text-align:center;font-size:.72rem;color:rgba(242,232,220,.3);margin-top:10px}
-.fsuccess{display:none;text-align:center;padding:52px 24px}
-.fsuccess.on{display:block}
-.fsuccess-ico{
-  width:62px;height:62px;border-radius:50%;
-  background:rgba(194,165,87,.12);border:2px solid var(--gold);
-  display:flex;align-items:center;justify-content:center;margin:0 auto 22px;
-}
-.fsuccess-ico svg{width:26px;height:26px;stroke:var(--gold);fill:none;stroke-width:2.2}
-.fsuccess h3{font-family:var(--serif);font-size:1.5rem;color:var(--cream);margin-bottom:10px}
-.fsuccess p{color:rgba(242,232,220,.58);font-size:.92rem}
-
-/* ─── Footer ─── */
-footer{background:#0e0a08;padding:28px 0;border-top:1px solid rgba(255,255,255,.05)}
-.ft-bot{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px}
-.ft-logo{font-size:1.2rem;color:var(--cream)}
-.ft-copy{font-size:.75rem;color:rgba(242,232,220,.28)}
-.ft-links{display:flex;gap:20px}
-.ft-links a{font-size:.78rem;color:rgba(242,232,220,.4);transition:color var(--ease)}
-.ft-links a:hover{color:var(--cream)}
-
-/* ─── Fade-up ─── */
-.fu{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
-.fu.in{opacity:1;transform:translateY(0)}
-.fu:nth-child(2){transition-delay:.1s}
-.fu:nth-child(3){transition-delay:.2s}
-.fu:nth-child(4){transition-delay:.3s}
-.fu:nth-child(5){transition-delay:.4s}
-
-/* ─── Responsive ─── */
-@media(max-width:1024px){
-  .cat-item:nth-child(1){grid-column:span 6}
-  .cat-item:nth-child(2){grid-column:span 6}
-  .cat-item:nth-child(3),.cat-item:nth-child(4),.cat-item:nth-child(5){grid-column:span 4}
-  .cta-inner{gap:44px}
-}
-@media(max-width:768px){
-  .hdr-cta{display:none}
-  .porq-grid{grid-template-columns:1fr;max-width:460px;margin:0 auto}
-  .cat-grid{grid-template-columns:1fr 1fr}
-  .cat-item:nth-child(n){grid-column:span 1 !important;grid-row:auto !important}
-  .cta-inner{grid-template-columns:1fr;gap:44px}
-  .cform{padding:28px 20px}
-  .frow{grid-template-columns:1fr}
-  .ft-bot{flex-direction:column;gap:12px;text-align:center}
-  .ft-links{flex-direction:column;align-items:center;gap:8px}
-}
-@media(max-width:480px){
-  .cat-grid{grid-template-columns:1fr}
-}
-</style>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -301,13 +39,21 @@ footer{background:#0e0a08;padding:28px 0;border-top:1px solid rgba(255,255,255,.
     <a href="#" class="hdr-logo logo-wrap" aria-label="Como la Seda">
       como la <span class="seda-inner">seda<svg class="seda-wave" viewBox="0 0 56 8" fill="none" preserveAspectRatio="none"><path d="M0,4 Q7,0 14,4 Q21,8 28,4 Q35,0 42,4 Q49,8 56,4" stroke="#C2A557" stroke-width="1.9" fill="none"/></svg></span>
     </a>
+    <nav class="hdr-nav" aria-label="Secciones">
+      <a href="#regalos" class="hdr-nav-link" data-i18n="nav.regalos">Regalos</a>
+      <a href="#suministros" class="hdr-nav-link" data-i18n="nav.suministros">Suministros</a>
+      <a href="#revende" class="hdr-nav-link" data-i18n="nav.revende">Revende</a>
+    </nav>
     <div class="hdr-right">
       <div class="lang" role="group" aria-label="Idioma / Language">
         <button class="lang-btn on" data-lang="es" onclick="setLang('es')">ES</button>
         <span class="lang-sep">|</span>
         <button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
       </div>
-      <a href="#cta" class="btn btn-gold hdr-cta" data-i18n="nav.cta">Pide presupuesto</a>
+      <a href="https://wa.me/34680211326?text=Hola%2C+vengo+de+la+web+y+quiero+información"
+         class="btn btn-gold hdr-cta"
+         data-i18n="nav.cta"
+         onclick="trackWA('general')">Escríbenos por WhatsApp</a>
     </div>
   </div>
 </header>
@@ -324,10 +70,13 @@ footer{background:#0e0a08;padding:28px 0;border-top:1px solid rgba(255,255,255,.
         </svg>
       </span>
     </div>
-    <span class="hero-tag" data-i18n="hero.tag">Regalos de empresa · Desde el origen</span>
-    <h1 class="hero-h1" data-i18n-h="hero.h1">Tu marca,<br>fabricada en origen</h1>
-    <p class="hero-sub" data-i18n="hero.sub">Importamos directo de fábrica en China. Sin intermediarios, con tu logo.</p>
-    <a href="#cta" class="btn btn-gold" data-i18n="hero.cta">Pide tu presupuesto gratis</a>
+    <span class="hero-tag" data-i18n="hero.tag">Regalos · Suministros · Importación directa</span>
+    <h1 class="hero-h1" data-i18n-h="hero.h1">Precio de fábrica,<br>sin intermediarios</h1>
+    <p class="hero-sub" data-i18n="hero.sub">Importamos directo desde China. Con tu logo, para tu negocio, o para revender. Te atiendo yo, por WhatsApp.</p>
+    <a href="https://wa.me/34680211326?text=Hola%2C+vengo+de+la+web+y+quiero+ver+el+catálogo"
+       class="btn btn-gold"
+       data-i18n="hero.cta"
+       onclick="trackWA('general')">Pide el catálogo por WhatsApp</a>
   </div>
   <div class="hero-arrow" aria-hidden="true">
     <svg width="22" height="30" viewBox="0 0 22 30" fill="none">
@@ -337,12 +86,12 @@ footer{background:#0e0a08;padding:28px 0;border-top:1px solid rgba(255,255,255,.
   </div>
 </section>
 
-<!-- ═══════════════════════════ POR QUÉ ═══════════════════════════ -->
-<section id="porq">
+<!-- ═══════════════════════════ REGALOS ═══════════════════════════ -->
+<section id="regalos">
   <div class="wrap">
-    <div class="porq-head">
-      <span class="label" data-i18n="porq.label">Nuestra ventaja</span>
-      <h2 class="title" data-i18n="porq.title">¿Por qué Como la Seda?</h2>
+    <div class="regalos-head">
+      <span class="label" data-i18n="regalos.label">Regalos de empresa</span>
+      <h2 class="title" data-i18n="regalos.title">Tu marca en cada detalle</h2>
       <div class="divider"><div class="divider-dot"></div></div>
     </div>
     <div class="porq-grid">
@@ -376,7 +125,7 @@ footer{background:#0e0a08;padding:28px 0;border-top:1px solid rgba(255,255,255,.
           </svg>
         </div>
         <h3 data-i18n="porq.3.h">Muestras antes de producir</h3>
-        <p data-i18n="porq.3.p">Antes de fabricar, puedes tocar y validar el producto. Enviamos muestras físicas para que compruebes calidad y acabados.</p>
+        <p data-i18n="porq.3.p">Antes de fabricar, recibes una muestra física para validar calidad y acabados. ¿No sabes si tu cantidad compensa? Cuéntanosla y te lo decimos sin compromiso.</p>
       </div>
 
     </div>
@@ -388,10 +137,10 @@ footer{background:#0e0a08;padding:28px 0;border-top:1px solid rgba(255,255,255,.
   <div class="wrap">
     <div class="cat-head">
       <span class="label" data-i18n="cat.label">Productos</span>
-      <h2 class="title" data-i18n="cat.title">Qué ofrecemos</h2>
+      <h2 class="title" data-i18n="cat.title">Ejemplos de lo que hacemos</h2>
       <div class="divider"><div class="divider-dot"></div></div>
     </div>
-    <p class="cat-note" data-i18n="cat.note">¿No ves lo que buscas? Fabricamos prácticamente cualquier producto personalizado — si lo puedes imaginar, lo podemos hacer.</p>
+    <p class="cat-note" data-i18n="cat.note">Estos son solo ejemplos. Si tienes algo concreto en mente — pídenoslo. El catálogo completo lo mandamos por WhatsApp.</p>
     <div class="cat-grid">
 
       <div class="cat-item fu">
@@ -421,8 +170,109 @@ footer{background:#0e0a08;padding:28px 0;border-top:1px solid rgba(255,255,255,.
 
     </div>
     <div class="cat-cta">
-      <p class="cat-proc" data-i18n="cat.proc">Cuéntanos qué necesitas · propuesta en 24 h · producción auditada · entrega en tu puerta</p>
-      <a href="#cta" class="btn btn-outline" data-i18n="cat.cta">Pide presupuesto sin compromiso</a>
+      <p class="cat-proc" data-i18n="cat.proc">Cuéntanos qué necesitas · cotización en 24 h · producción auditada · entrega en tu puerta</p>
+      <a href="https://wa.me/34680211326?text=Hola%2C+quiero+el+catálogo+completo+de+regalos+de+empresa"
+         class="btn btn-outline"
+         data-i18n="cat.cta"
+         onclick="trackWA('regalos')">Pide el catálogo completo por WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ SUMINISTROS ═══════════════════════════ -->
+<section id="suministros">
+  <div class="wrap">
+    <div class="sumi-head">
+      <span class="label" data-i18n="sumi.label">Suministros recurrentes</span>
+      <h2 class="title" data-i18n-h="sumi.title">Los consumibles que ya compras,<br>a precio de origen</h2>
+      <div class="divider"><div class="divider-dot"></div></div>
+      <p class="sumi-sub" data-i18n="sumi.sub">Si ya tienes proveedores de materiales, envases o consumibles, conseguimos lo mismo directo de fábrica. El ahorro se acumula cada pedido.</p>
+    </div>
+    <div class="sumi-steps">
+      <div class="sumi-step fu">
+        <div class="sumi-num">1</div>
+        <h3 data-i18n="sumi.step1.h">Mándanos una foto o factura</h3>
+        <p data-i18n="sumi.step1.p">Del producto que ya compras. Con eso buscamos el equivalente en fábrica.</p>
+      </div>
+      <div class="sumi-step fu">
+        <div class="sumi-num">2</div>
+        <h3 data-i18n="sumi.step2.h">Cotización en 48 h</h3>
+        <p data-i18n="sumi.step2.p">Con precio de fábrica, plazo de entrega y muestra disponible si la quieres.</p>
+      </div>
+      <div class="sumi-step fu">
+        <div class="sumi-num">3</div>
+        <h3 data-i18n="sumi.step3.h">Suministro recurrente</h3>
+        <p data-i18n="sumi.step3.p">Una vez validado, hacemos los pedidos cuando los necesites. Sin sorpresas.</p>
+      </div>
+    </div>
+    <p class="sumi-note" data-i18n="sumi.note">Verificamos certificaciones UE (p. ej. contacto alimentario) antes de cotizar.</p>
+    <div class="sumi-cta">
+      <a href="https://wa.me/34680211326?text=Hola%2C+quiero+cotizar+consumibles+recurrentes+para+mi+empresa"
+         class="btn btn-gold"
+         data-i18n="sumi.cta"
+         onclick="trackWA('suministros')">Cotiza tus consumibles por WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ REVENDE ═══════════════════════════ -->
+<section id="revende">
+  <div class="wrap">
+    <div class="rev-head">
+      <span class="label" data-i18n="rev.label">Importa para revender</span>
+      <h2 class="title" data-i18n-h="rev.title">El margen del distribuidor,<br>para ti</h2>
+      <div class="divider"><div class="divider-dot"></div></div>
+      <p class="rev-sub" data-i18n="rev.sub">Hoy le compras a un almacenista local que tiene el stock, te fija el precio y se queda su margen. Nosotros te lo traemos de fábrica: tú decides el precio y te quedas la diferencia.</p>
+    </div>
+    <div class="rev-grid">
+      <div class="porq-card fu">
+        <div class="porq-icon">
+          <svg viewBox="0 0 24 24"><path d="M20 7H4a2 2 0 00-2 2v6a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z"/><path d="M16 3v4M8 3v4M3 11h18"/></svg>
+        </div>
+        <h3 data-i18n="rev.v1.h">Sin depender de stock ajeno</h3>
+        <p data-i18n="rev.v1.p">Pides lo que necesitas cuando lo necesitas, sin mínimos imposibles de un distribuidor.</p>
+      </div>
+      <div class="porq-card fu">
+        <div class="porq-icon">
+          <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/><path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </div>
+        <h3 data-i18n="rev.v2.h">Muestras antes de comprometerte</h3>
+        <p data-i18n="rev.v2.p">Prueba el producto antes de pedir en cantidad. Sin sorpresas en calidad ni acabados.</p>
+      </div>
+      <div class="porq-card fu">
+        <div class="porq-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+        </div>
+        <h3 data-i18n="rev.v3.h">Precio de fábrica real</h3>
+        <p data-i18n="rev.v3.p">Acceso directo a los mismos precios que tienen los distribuidores. El margen es tuyo.</p>
+      </div>
+    </div>
+    <div class="rev-cta">
+      <a href="https://wa.me/34680211326?text=Hola%2C+me+interesa+importar+productos+para+revender"
+         class="btn btn-gold"
+         data-i18n="rev.cta"
+         onclick="trackWA('revende')">Hablemos de lo que quieres importar</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ QUIÉN ═══════════════════════════ -->
+<section id="quien">
+  <div class="wrap">
+    <div class="who-inner">
+      <div class="who-photo">
+        <div class="who-photo-placeholder" aria-hidden="true">A</div>
+      </div>
+      <div class="who-text">
+        <span class="label" data-i18n="who.label">Quién está detrás</span>
+        <h2 class="title" data-i18n="who.title">Hola, soy Alejandro</h2>
+        <p class="who-p" data-i18n="who.p1">Te atiendo yo directamente, sin comerciales ni call centers. Cuando me escribas por WhatsApp, hablas conmigo.</p>
+        <p class="who-p" data-i18n="who.p2">Me encargo de buscar el proveedor, negociar el precio, supervisar la producción y coordinar el envío. Tú te despreocupas.</p>
+        <a href="https://wa.me/34680211326?text=Hola+Alejandro%2C+vengo+de+tu+web+y+quiero+más+información"
+           class="btn btn-gold"
+           data-i18n="who.cta"
+           onclick="trackWA('general')">Escríbeme directamente</a>
+      </div>
     </div>
   </div>
 </section>
@@ -434,73 +284,87 @@ footer{background:#0e0a08;padding:28px 0;border-top:1px solid rgba(255,255,255,.
 
       <div class="cta-info">
         <span class="label" data-i18n="cta.label">Contacto</span>
-        <h2 class="title" data-i18n="cta.title">Cuéntanos qué necesitas</h2>
-        <p class="cta-sub" data-i18n="cta.sub">Te respondemos en menos de 24 horas con una propuesta personalizada y precio real de fábrica.</p>
+        <h2 class="title" data-i18n="cta.title">Escríbeme por WhatsApp</h2>
+        <p class="cta-sub" data-i18n="cta.sub">Es la forma más rápida. Te respondo yo mismo, normalmente el mismo día.</p>
         <div class="cta-detail">
           <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
           <span>comolaseda@wisdowl.com</span>
         </div>
         <div class="cta-detail">
           <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11.5a19.79 19.79 0 01-3.07-8.67A2 2 0 011.72 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L5.91 8.09a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-          <span>+34 622 200 594</span>
+          <a href="tel:+34680211326"><span>+34 680 211 326</span></a>
         </div>
         <div class="cta-detail">
           <svg viewBox="0 0 24 24"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0112 2a8 8 0 018 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
-          <span data-i18n="cta.location">Acceso presencial a fábricas en<br>Guangzhou, Yiwu y Shenzhen</span>
+          <span data-i18n-h="cta.location">Acceso presencial a fábricas en<br>Guangzhou, Yiwu y Shenzhen</span>
         </div>
       </div>
 
-      <div>
-        <form class="cform" id="cForm" novalidate>
-          <div class="frow">
-            <div class="fg">
-              <label for="f-nombre" data-i18n="f.nombre">Nombre</label>
-              <input type="text" id="f-nombre" name="nombre" required placeholder="Tu nombre">
-            </div>
-            <div class="fg">
-              <label for="f-empresa" data-i18n="f.empresa">Empresa</label>
-              <input type="text" id="f-empresa" name="empresa" required placeholder="Nombre de tu empresa">
-            </div>
-          </div>
-          <div class="frow">
-            <div class="fg">
-              <label for="f-email" data-i18n="f.email">Email</label>
-              <input type="email" id="f-email" name="email" required placeholder="tu@empresa.com">
-            </div>
-            <div class="fg">
-              <label for="f-tel" data-i18n="f.tel">Teléfono</label>
-              <input type="tel" id="f-tel" name="tel" placeholder="+34 622 200 594">
-            </div>
-          </div>
-          <div class="fg">
-            <label for="f-msg" data-i18n="f.msg">Qué necesitas</label>
-            <textarea id="f-msg" name="msg" required placeholder="Cuéntanos qué producto te interesa, para qué ocasión, si necesitas personalización..."></textarea>
-          </div>
-          <div class="fg">
-            <label for="f-qty" data-i18n="f.qty">Cantidad aproximada</label>
-            <select id="f-qty" name="qty">
-              <option value="" disabled selected data-i18n="f.qty.ph">Selecciona una opción</option>
-              <option value="<50"     data-i18n="f.qty.1">Menos de 50 unidades</option>
-              <option value="50-200"  data-i18n="f.qty.2">50 – 200 unidades</option>
-              <option value="200-500" data-i18n="f.qty.3">200 – 500 unidades</option>
-              <option value="500-1k"  data-i18n="f.qty.4">500 – 1.000 unidades</option>
-              <option value=">1k"     data-i18n="f.qty.5">Más de 1.000 unidades</option>
-            </select>
-          </div>
-          <input type="hidden" name="access_key" value="2daea4a6-3360-4954-84e9-eb9ee65320e5">
-          <input type="hidden" name="replyto" id="f-replyto">
-          <input type="hidden" name="subject" id="f-subject">
-          <input type="hidden" name="from_name" value="Como la Seda — Web">
-          <button type="submit" class="btn btn-gold fsub" data-i18n="f.send">Enviar solicitud</button>
-          <p class="fnote" data-i18n="f.note">Sin compromiso · Respuesta en menos de 24 h</p>
-        </form>
+      <div class="cta-right">
+        <a href="https://wa.me/34680211326?text=Hola%2C+vengo+de+tu+web+y+quiero+más+información"
+           class="btn-wa-big"
+           data-i18n="cta.wa.btn"
+           onclick="trackWA('general')">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.532 5.856L.057 23.625a.5.5 0 00.624.606l5.865-1.538A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.713 9.713 0 01-4.953-1.352l-.355-.211-3.68.965.984-3.595-.232-.37A9.712 9.712 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+          <span>Abrir WhatsApp ahora</span>
+        </a>
 
-        <div class="fsuccess" id="fOk">
-          <div class="fsuccess-ico">
-            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+        <button class="cta-email-toggle" onclick="toggleForm()" data-i18n="cta.email.toggle">
+          ¿Prefieres el formulario?
+        </button>
+
+        <div id="emailForm" class="email-form-wrap" hidden>
+          <form class="cform" id="cForm" novalidate>
+            <div class="frow">
+              <div class="fg">
+                <label for="f-nombre" data-i18n="f.nombre">Nombre</label>
+                <input type="text" id="f-nombre" name="nombre" required placeholder="Tu nombre">
+              </div>
+              <div class="fg">
+                <label for="f-empresa" data-i18n="f.empresa">Empresa</label>
+                <input type="text" id="f-empresa" name="empresa" required placeholder="Nombre de tu empresa">
+              </div>
+            </div>
+            <div class="frow">
+              <div class="fg">
+                <label for="f-email" data-i18n="f.email">Email</label>
+                <input type="email" id="f-email" name="email" required placeholder="tu@empresa.com">
+              </div>
+              <div class="fg">
+                <label for="f-tel" data-i18n="f.tel">Teléfono</label>
+                <input type="tel" id="f-tel" name="tel" placeholder="+34 680 211 326">
+              </div>
+            </div>
+            <div class="fg">
+              <label for="f-msg" data-i18n="f.msg">Qué necesitas</label>
+              <textarea id="f-msg" name="msg" required placeholder="Cuéntanos qué producto te interesa, para qué ocasión, si necesitas personalización..."></textarea>
+            </div>
+            <div class="fg">
+              <label for="f-qty" data-i18n="f.qty">Cantidad aproximada</label>
+              <select id="f-qty" name="qty">
+                <option value="" disabled selected data-i18n="f.qty.ph">Selecciona una opción</option>
+                <option value="<50"     data-i18n="f.qty.1">Menos de 50 unidades</option>
+                <option value="50-200"  data-i18n="f.qty.2">50 – 200 unidades</option>
+                <option value="200-500" data-i18n="f.qty.3">200 – 500 unidades</option>
+                <option value="500-1k"  data-i18n="f.qty.4">500 – 1.000 unidades</option>
+                <option value=">1k"     data-i18n="f.qty.5">Más de 1.000 unidades</option>
+              </select>
+            </div>
+            <input type="hidden" name="access_key" value="2daea4a6-3360-4954-84e9-eb9ee65320e5">
+            <input type="hidden" name="replyto" id="f-replyto">
+            <input type="hidden" name="subject" id="f-subject">
+            <input type="hidden" name="from_name" value="Como la Seda — Web">
+            <button type="submit" class="btn btn-gold fsub" data-i18n="f.send">Enviar solicitud</button>
+            <p class="fnote" data-i18n="f.note">Sin compromiso · Respuesta en menos de 24 h</p>
+          </form>
+
+          <div class="fsuccess" id="fOk">
+            <div class="fsuccess-ico">
+              <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <h3 data-i18n="f.ok.h">¡Solicitud recibida!</h3>
+            <p data-i18n="f.ok.p">Te contactaré en menos de 24 horas con una propuesta personalizada.</p>
           </div>
-          <h3 data-i18n="f.ok.h">¡Solicitud recibida!</h3>
-          <p data-i18n="f.ok.p">Te contactaremos en menos de 24 horas con una propuesta personalizada.</p>
         </div>
       </div>
 
@@ -517,174 +381,25 @@ footer{background:#0e0a08;padding:28px 0;border-top:1px solid rgba(255,255,255,.
       </a>
       <p class="ft-copy" data-i18n="ft.rights">© 2026 Como la Seda. Todos los derechos reservados.</p>
       <div class="ft-links">
+        <a href="#regalos" data-i18n="nav.regalos">Regalos</a>
+        <a href="#suministros" data-i18n="nav.suministros">Suministros</a>
+        <a href="#revende" data-i18n="nav.revende">Revende</a>
         <a href="mailto:comolaseda@wisdowl.com">comolaseda@wisdowl.com</a>
-        <a href="tel:+34622200594">+34 622 200 594</a>
+        <a href="privacidad.html" data-i18n="ft.privacy">Política de privacidad</a>
       </div>
     </div>
   </div>
 </footer>
 
-<script>
-/* ─── Traducciones ─── */
-const T = {
-es:{
-  'nav.cta':'Pide presupuesto',
-  'hero.tag':'Regalos de empresa · Desde el origen',
-  'hero.h1':'Tu marca,<br>fabricada en origen',
-  'hero.sub':'Importamos directo de fábrica en China. Sin intermediarios, con tu logo.',
-  'hero.cta':'Pide tu presupuesto gratis',
-  'porq.label':'Nuestra ventaja',
-  'porq.title':'¿Por qué Como la Seda?',
-  'porq.1.h':'Fábrica directa',
-  'porq.1.p':'Sin intermediarios. Precio real de origen con acceso presencial y verificado a fabricantes chinos.',
-  'porq.2.h':'Personalización total',
-  'porq.2.p':'Bordado, grabado láser, serigrafía, impresión UV. Tu marca en cada detalle, exactamente como la imaginas.',
-  'porq.3.h':'Muestras antes de producir',
-  'porq.3.p':'Antes de fabricar, puedes tocar y validar el producto. Enviamos muestras físicas para que compruebes calidad y acabados.',
-  'cat.label':'Productos',
-  'cat.title':'Qué ofrecemos',
-  'cat.note':'¿No ves lo que buscas? Fabricamos prácticamente cualquier producto personalizado — si lo puedes imaginar, lo podemos hacer.',
-  'cat.1':'Textil corporativo',
-  'cat.2':'Drinkware',
-  'cat.3':'Oficina premium',
-  'cat.4':'Tecnología promocional',
-  'cat.5':'Pedidos al por mayor',
-  'cat.proc':'Cuéntanos qué necesitas · propuesta en 24 h · producción auditada · entrega en tu puerta',
-  'cat.cta':'Pide presupuesto sin compromiso',
-  'cta.label':'Contacto',
-  'cta.title':'Cuéntanos qué necesitas',
-  'cta.sub':'Te respondemos en menos de 24 horas con una propuesta personalizada y precio real de fábrica.',
-  'cta.location':'Acceso presencial a fábricas en<br>Guangzhou, Yiwu y Shenzhen',
-  'f.nombre':'Nombre','f.empresa':'Empresa','f.email':'Email','f.tel':'Teléfono',
-  'f.msg':'Qué necesitas','f.qty':'Cantidad aproximada',
-  'f.qty.ph':'Selecciona una opción',
-  'f.qty.1':'Menos de 50 unidades','f.qty.2':'50 – 200 unidades',
-  'f.qty.3':'200 – 500 unidades','f.qty.4':'500 – 1.000 unidades',
-  'f.qty.5':'Más de 1.000 unidades',
-  'f.send':'Enviar solicitud','f.note':'Sin compromiso · Respuesta en menos de 24 h',
-  'f.ok.h':'¡Solicitud recibida!',
-  'f.ok.p':'Te contactaremos en menos de 24 horas con una propuesta personalizada.',
-  'ft.rights':'© 2026 Como la Seda. Todos los derechos reservados.'
-},
-en:{
-  'nav.cta':'Get a quote',
-  'hero.tag':'Corporate gifts · From the source',
-  'hero.h1':'Your brand,<br>made at the source',
-  'hero.sub':'Direct factory imports from China. No middlemen. Your logo on everything.',
-  'hero.cta':'Get your free quote',
-  'porq.label':'Our advantage',
-  'porq.title':'Why Como la Seda?',
-  'porq.1.h':'Direct factory access',
-  'porq.1.p':'No middlemen. Real origin prices with verified, on-site access to Chinese manufacturers.',
-  'porq.2.h':'Full customization',
-  'porq.2.p':'Embroidery, laser engraving, screen printing, UV printing. Your brand on every detail, exactly as you imagine it.',
-  'porq.3.h':'Samples before production',
-  'porq.3.p':'Before manufacturing, you can touch and validate the product. We send physical samples so you can check quality and finishes.',
-  'cat.label':'Products',
-  'cat.title':'What we offer',
-  'cat.note':'Don\'t see what you\'re looking for? We can make almost any custom product — if you can imagine it, we can make it.',
-  'cat.1':'Corporate apparel',
-  'cat.2':'Drinkware',
-  'cat.3':'Premium office',
-  'cat.4':'Promotional tech',
-  'cat.5':'Wholesale orders',
-  'cat.proc':'Tell us what you need · proposal in 24 h · audited production · delivery to your door',
-  'cat.cta':'Get a quote — no commitment',
-  'cta.label':'Contact',
-  'cta.title':'Tell us what you need',
-  'cta.sub':'We\'ll reply within 24 hours with a personalised proposal and a real factory price.',
-  'cta.location':'On-site factory access in<br>Guangzhou, Yiwu and Shenzhen',
-  'f.nombre':'Name','f.empresa':'Company','f.email':'Email','f.tel':'Phone',
-  'f.msg':'What do you need','f.qty':'Approximate quantity',
-  'f.qty.ph':'Select an option',
-  'f.qty.1':'Less than 50 units','f.qty.2':'50 – 200 units',
-  'f.qty.3':'200 – 500 units','f.qty.4':'500 – 1,000 units',
-  'f.qty.5':'More than 1,000 units',
-  'f.send':'Send request','f.note':'No commitment · Reply within 24 h',
-  'f.ok.h':'Request received!',
-  'f.ok.p':'We\'ll contact you within 24 hours with a personalised proposal.',
-  'ft.rights':'© 2026 Como la Seda. All rights reserved.'
-}
-};
+<!-- Botón flotante WhatsApp -->
+<a id="waFloat"
+   href="https://wa.me/34680211326?text=Hola%2C+vengo+de+tu+web"
+   class="wa-float"
+   aria-label="Contactar por WhatsApp"
+   onclick="trackWA('float')">
+  <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.532 5.856L.057 23.625a.5.5 0 00.624.606l5.865-1.538A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.713 9.713 0 01-4.953-1.352l-.355-.211-3.68.965.984-3.595-.232-.37A9.712 9.712 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+</a>
 
-/* ─── Cambio de idioma ─── */
-function setLang(lang){
-  document.documentElement.lang = lang;
-  document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('on', b.dataset.lang === lang));
-
-  document.querySelectorAll('[data-i18n]').forEach(el => {
-    const v = T[lang][el.dataset.i18n];
-    if(v !== undefined) el.textContent = v;
-  });
-  document.querySelectorAll('[data-i18n-h]').forEach(el => {
-    const v = T[lang][el.dataset.i18nH];
-    if(v !== undefined) el.innerHTML = v;
-  });
-}
-
-/* ─── Header scroll ─── */
-const hdr = document.getElementById('hdr');
-window.addEventListener('scroll', () => hdr.classList.toggle('on', scrollY > 50), {passive:true});
-
-/* ─── Hero bg ken-burns ─── */
-window.addEventListener('load', () => {
-  document.getElementById('heroBg').classList.add('rdy');
-});
-
-/* ─── Intersection Observer ─── */
-const obs = new IntersectionObserver(entries => {
-  entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('in'); obs.unobserve(e.target); }});
-}, {threshold:0.12});
-document.querySelectorAll('.fu').forEach(el => obs.observe(el));
-
-/* ─── Formulario ─── */
-document.getElementById('cForm').addEventListener('submit', function(e){
-  e.preventDefault();
-  let ok = true;
-  this.querySelectorAll('[required]').forEach(f => {
-    const err = !f.value.trim() || (f.type==='email' && !f.value.includes('@'));
-    f.style.borderColor = err ? 'var(--red)' : '';
-    if(err) ok = false;
-  });
-  if(!ok) return;
-
-  const nombre  = document.getElementById('f-nombre').value.trim();
-  const empresa = document.getElementById('f-empresa').value.trim();
-  const email   = document.getElementById('f-email').value.trim();
-  document.getElementById('f-replyto').value = email;
-  document.getElementById('f-subject').value =
-    `Solicitud de presupuesto de ${nombre} (${empresa}) — Como la Seda`;
-
-  const btn = this.querySelector('.fsub');
-  const btnTxt = btn.textContent;
-  btn.textContent = '...';
-  btn.disabled = true;
-
-  fetch('https://api.web3forms.com/submit', {
-    method: 'POST',
-    headers: { 'Accept': 'application/json' },
-    body: new FormData(this)
-  })
-  .then(r => r.json())
-  .then(() => {
-    this.style.display = 'none';
-    document.getElementById('fOk').classList.add('on');
-    if (window.fbq) fbq('track', 'Lead');
-  })
-  .catch(() => {
-    btn.textContent = btnTxt;
-    btn.disabled = false;
-  });
-});
-document.querySelectorAll('[required]').forEach(f => f.addEventListener('input', () => f.style.borderColor=''));
-
-/* ─── Smooth scroll ─── */
-document.querySelectorAll('a[href^="#"]').forEach(a => {
-  a.addEventListener('click', e => {
-    const t = document.querySelector(a.getAttribute('href'));
-    if(t){ e.preventDefault(); t.scrollIntoView({behavior:'smooth', block:'start'}); }
-  });
-});
-</script>
+<script src="app.js"></script>
 </body>
 </html>
