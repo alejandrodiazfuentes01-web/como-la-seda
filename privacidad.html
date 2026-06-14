@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de privacidad — Como la Seda</title>
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+.priv-wrap{max-width:780px;margin:0 auto;padding:calc(var(--hh) + 60px) 24px 80px}
+.priv-wrap h1{font-family:var(--serif);font-size:2.2rem;font-weight:600;margin-bottom:32px;line-height:1.2}
+.priv-wrap h2{font-family:var(--serif);font-size:1.3rem;font-weight:600;margin:36px 0 10px;color:var(--dark)}
+.priv-wrap p,.priv-wrap li{font-size:.95rem;color:rgba(27,27,27,.72);line-height:1.85;margin-bottom:10px}
+.priv-wrap ul{padding-left:20px;list-style:disc;margin-bottom:10px}
+.priv-wrap a{color:var(--red);text-decoration:underline}
+.priv-back{display:inline-flex;align-items:center;gap:6px;margin-bottom:40px;font-size:.85rem;color:var(--gold);font-weight:500}
+.priv-updated{margin-top:56px;font-size:.78rem;color:rgba(27,27,27,.35)}
+</style>
+</head>
+<body>
+
+<header id="hdr">
+  <div class="wrap">
+    <a href="index.html" class="hdr-logo logo-wrap" aria-label="Como la Seda — volver a inicio">
+      como la <span class="seda-inner">seda<svg class="seda-wave" viewBox="0 0 56 8" fill="none" preserveAspectRatio="none"><path d="M0,4 Q7,0 14,4 Q21,8 28,4 Q35,0 42,4 Q49,8 56,4" stroke="#C2A557" stroke-width="1.9" fill="none"/></svg></span>
+    </a>
+  </div>
+</header>
+
+<div class="priv-wrap">
+  <a href="index.html" class="priv-back">← Volver a inicio</a>
+  <h1>Política de privacidad</h1>
+
+  <p><strong>Responsable del tratamiento:</strong> [PENDIENTE: nombre y apellidos], con NIF [PENDIENTE: NIF/DNI], con domicilio en [PENDIENTE: dirección completa]. Correo electrónico de contacto: comolaseda@wisdowl.com.</p>
+
+  <h2>¿Qué datos recogemos?</h2>
+  <p>A través del formulario de contacto de esta web recogemos los siguientes datos personales: nombre, nombre de empresa, dirección de correo electrónico, número de teléfono (opcional) y el contenido del mensaje que nos envías.</p>
+
+  <h2>¿Para qué los usamos?</h2>
+  <ul>
+    <li>Responder a tu solicitud de información o presupuesto.</li>
+    <li>Gestionar la relación comercial si decides contratarnos.</li>
+    <li>Enviarte comunicaciones comerciales relacionadas con nuestros servicios, si nos das tu consentimiento expreso.</li>
+  </ul>
+
+  <h2>¿Cuánto tiempo guardamos tus datos?</h2>
+  <p>Conservamos tus datos durante el tiempo necesario para atender tu solicitud y, en caso de que se establezca una relación comercial, durante los plazos legalmente exigidos (mínimo 5 años para la documentación mercantil y fiscal).</p>
+
+  <h2>¿Los cedemos a terceros?</h2>
+  <p>Los datos del formulario se transmiten a <strong>Web3Forms</strong> (api.web3forms.com), servicio de envío de formularios, exclusivamente para hacernos llegar tu solicitud. No vendemos ni cedemos tus datos a terceros para fines publicitarios.</p>
+  <p>Esta web utiliza el <strong>Meta Pixel</strong> de Meta Platforms Ireland Ltd. para medir la efectividad de nuestros anuncios en Facebook e Instagram. Meta puede tratar información sobre tu visita conforme a su <a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener noreferrer">política de privacidad</a>. Puedes gestionar tus preferencias publicitarias en <a href="https://www.facebook.com/ads/preferences" target="_blank" rel="noopener noreferrer">facebook.com/ads/preferences</a>.</p>
+
+  <h2>Base legal del tratamiento</h2>
+  <p>El tratamiento de tus datos se basa en tu consentimiento al enviar el formulario de contacto (art. 6.1.a RGPD) y, cuando existe relación contractual, en la ejecución de un contrato (art. 6.1.b RGPD).</p>
+
+  <h2>Tus derechos</h2>
+  <p>Puedes ejercer en cualquier momento tus derechos de acceso, rectificación, supresión, oposición, limitación del tratamiento y portabilidad de datos escribiéndonos a comolaseda@wisdowl.com, indicando el derecho que deseas ejercer. También tienes derecho a presentar una reclamación ante la <a href="https://www.aepd.es" target="_blank" rel="noopener noreferrer">Agencia Española de Protección de Datos (AEPD)</a>.</p>
+
+  <p class="priv-updated">Última actualización: junio de 2026</p>
+</div>
+
+<script>
+const hdr = document.getElementById('hdr');
+window.addEventListener('scroll', () => hdr.classList.toggle('on', scrollY > 50), { passive: true });
+</script>
+</body>
+</html>
