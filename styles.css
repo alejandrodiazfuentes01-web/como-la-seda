@@ -154,7 +154,13 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 .porq-card p{font-size:.92rem;color:rgba(27,27,27,.68);line-height:1.75}
 
 /* ─── Suministros ─── */
-#suministros{background:#f7f1e9;padding:100px 0}
+#suministros{
+  background-color:#f7f1e9;
+  background-image:linear-gradient(rgba(247,241,233,.88),rgba(247,241,233,.88)),
+    url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1800&q=60&fit=crop');
+  background-size:cover;background-position:center;
+  padding:100px 0;
+}
 .sumi-head{text-align:center;margin-bottom:60px}
 .sumi-sub{max-width:580px;margin:20px auto 0;color:rgba(27,27,27,.65);font-size:.97rem;line-height:1.75}
 .sumi-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-bottom:40px}
@@ -172,7 +178,13 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 .sumi-cta{text-align:center}
 
 /* ─── Revende ─── */
-#revende{background:var(--cream);padding:100px 0}
+#revende{
+  background-color:var(--cream);
+  background-image:linear-gradient(rgba(242,232,220,.85),rgba(242,232,220,.85)),
+    url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1800&q=60&fit=crop');
+  background-size:cover;background-position:center;
+  padding:100px 0;
+}
 .rev-head{text-align:center;margin-bottom:60px}
 .rev-sub{max-width:600px;margin:20px auto 0;color:rgba(27,27,27,.65);font-size:.97rem;line-height:1.75}
 .rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-bottom:52px}
